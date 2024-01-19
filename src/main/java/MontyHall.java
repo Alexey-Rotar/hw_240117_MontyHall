@@ -32,6 +32,8 @@ public class MontyHall
             if (result.get(i))
                 wins++;
         }
-        System.out.printf("Выигрышей: %.1f%%", (float)wins/DRAWS_COUNT*100);
+        System.out.printf("Всего розыгрышей: %s", DRAWS_COUNT);
+        System.out.printf("\nВыигрышей: %.1f%%", (float)wins/DRAWS_COUNT*100);
+        System.out.printf("\nПроигрышей: %.1f%%", 100-(float)wins/DRAWS_COUNT*100);
     }
 }
