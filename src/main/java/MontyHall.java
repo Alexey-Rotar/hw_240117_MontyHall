@@ -8,7 +8,7 @@ public class MontyHall
         int DRAWS_COUNT = 1000;
         int winDoor, firstChoice, secondChoice = 0, openedDoor, wins = 0;
         Map <Integer, Boolean> result = new HashMap<>();
-        for (int i = 1; i < DRAWS_COUNT; i++){
+        for (int i = 1; i <= DRAWS_COUNT; i++){
             // случайное определение выигрышной двери
             winDoor = (int) (Math.random() * 3) + 1;
             // случайный первый выбор
