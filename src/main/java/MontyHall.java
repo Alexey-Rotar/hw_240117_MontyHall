@@ -17,7 +17,7 @@ public class MontyHall
             do { openedDoor = (int) (Math.random() * 3) + 1; }
             while(!(openedDoor != winDoor && openedDoor != firstChoice));
             // второй выбор, не совпадающий с первым выбором и уже открытой дверью
-            do { secondChoice ++; }
+            do { secondChoice++; }
             while(secondChoice == firstChoice || secondChoice == openedDoor);
             // занесение текущего результата
             if (secondChoice == winDoor) {
@@ -32,7 +32,7 @@ public class MontyHall
                 wins++;
         }
         System.out.printf("Всего розыгрышей: %s", DRAWS_COUNT);
-        System.out.printf("\nВыигрышей: %.1f%%", (float)wins/DRAWS_COUNT*100);
-        System.out.printf("\nПроигрышей: %.1f%%", 100-(float)wins/DRAWS_COUNT*100);
+        System.out.printf("\nВыигрышей: %.1f%%", (float) wins / DRAWS_COUNT * 100);
+        System.out.printf("\nПроигрышей: %.1f%%", 100 - (float) wins / DRAWS_COUNT * 100);
     }
 }
